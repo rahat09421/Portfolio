@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahat.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="navigation">
+            <div class="name">
+                <h2>Rahat.</h2>
+            </div>
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-section">
+        <h1>Crafting Digital Masterpieces</h1>
+        <p>Hi, I'm Rahat Ali, a passionate Web Developer 
+            dedicated to bringing your vision to life.</p>
+             <img src="arrow-down-icon.png" alt="">
+           
+    </div>
+
+  <div class="my-projects">
+    <h1>My Projects</h1>
+        <div class="filter-container">
+            <select id="categoryFilter" class="filter-select" onchange="filterCards()">
+            <option value="all">All</option>
+            <option value="web">Web Development</option>
+            <option value="android">React Native App</option>
+        </select>
+        <button class="clear-filter-btn" onclick="clearFilter()">Clear Filter</button>
+    </div>
+    <div class="card-container">
+        <div class="card" data-category="web">
+            <div class="card-image" onclick="openLightbox('bitrader.png')">
+                <div class="tag web">Web</div>
+                <img src="bitrader.png" alt="Bitrader - Crypto, Stock and Forex Trading Business">
+            </div>
+            <div class="card-content">
+                <h3>Bitrader - Crypto, Stock and Forex Trading Business</h3>
+                
+            </div>
+        </div>
+        <div class="card" data-category="android">
+            <div class="card-image" onclick="openLightbox('vs.avif')">
+                <div class="tag android">React</div>
+                <img src="vs.avif" alt="VSApp - Ultimate App">
+            </div>
+            <div class="card-content">
+                <h3>VSApp - Ultimate App</h3>
+                
+            </div>
+        </div>
+        <div class="card" data-category="web">
+            <div class="card-image" onclick="openLightbox('furniture.avif')">
+                <div class="tag web">Web</div>
+                <img src="furniture.avif" alt="Novas - eCommerce Furniture">
+            </div>
+            <div class="card-content">
+                <h3>Novas - eCommerce Furniture</h3>
+                
+            </div>
+        </div>
+        <div class="card" data-category="android">
+            <div class="card-image" onclick="openLightbox('dinehub.avif')">
+                <div class="tag android">React</div>
+                <img src="dinehub.avif" alt="DineHub - Food Delivery React Native App">
+            </div>
+            <div class="card-content">
+                <h3>DineHub - Food Delivery React Native App</h3>
+                
+            </div>
+        </div>
+        <div class="card" data-category="android">
+            <div class="card-image" onclick="openLightbox('beshop.avif')">
+                <div class="tag android">React</div>
+                <img src="beshop.avif" alt="BeShop - React Native Beauty Store App">
+            </div>
+            <div class="card-content">
+                <h3>BeShop - React Native Beauty Store App</h3>
+                
+            </div>
+        </div>
+        <div class="card" data-category="web">
+            <div class="card-image" onclick="openLightbox('rently.png')">
+                <div class="tag web">Web</div>
+                <img src="rently.png" alt="Rentaly - Car Rental Website">
+            </div>
+            <div class="card-content">
+                <h3>Rentaly - Car Rental Website</h3>
+                
+            </div>
+        </div>
+        <div class="card" data-category="android">
+            <div class="card-image" onclick="openLightbox('nuton.avif')">
+                <div class="tag android">React</div>
+                <img src="nuton.avif" alt="Nuton - Online Learning React Native App">
+            </div>
+            <div class="card-content">
+                <h3>Nuton - Online Learning React Native App</h3>
+                
+            </div>
+        </div>
+        <div class="card" data-category="web">
+            <div class="card-image" onclick="openLightbox('ovix.avif')">
+                <div class="tag web">Web</div>
+                <img src="ovix.avif" alt="Ovix - Digital Agency & Portfolio">
+            </div>
+            <div class="card-content">
+                <h3>Ovix - Digital Agency & Portfolio</h3>
+                
+            </div>
+        </div>
+    </div>
+  </div>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightboxImage">
+    <div id="lightboxCaption" class="lightbox-caption"></div>
+</div>
+
+<div class="skill-section">
+    <h1 class="skill-h1">My Skills</h1>
+    <div class="skill-container">
+    
+    <div class="skill">
+        <div class="outer">
+            <div class="inner">
+                <div id="number">
+                    
+                </div>
+            </div>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+            <defs>
+               <linearGradient id="GradientColor">
+                  <stop offset="0%" stop-color="#e91e63" />
+                  <stop offset="100%" stop-color="#673ab7" />
+               </linearGradient>
+            </defs>
+            <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+    </svg>
+    <h2 class="skill-h2">HTML & CSS</h2>
+    </div>
+    <div class="skill">
+        <div class="outer">
+            <div class="inner">
+                <div id="number1">
+                    
+                </div>
+            </div>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+            <defs>
+               <linearGradient id="GradientColor">
+                  <stop offset="0%" stop-color="#e91e63" />
+                  <stop offset="100%" stop-color="#673ab7" />
+               </linearGradient>
+            </defs>
+            <circle class="circle1" cx="80" cy="80" r="70" stroke-linecap="round" />
+        </svg>
+        <h2 class="skill-h2">JavaScript</h2>
+    </div>
+    <div class="skill">
+        <div class="outer">
+            <div class="inner">
+                <div id="number2">
+                    
+                </div>
+            </div>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+            <defs>
+               <linearGradient id="GradientColor">
+                  <stop offset="0%" stop-color="#e91e63" />
+                  <stop offset="100%" stop-color="#673ab7" />
+               </linearGradient>
+            </defs>
+            <circle class="circle2" cx="80" cy="80" r="70" stroke-linecap="round" />
+        </svg>
+        <h2 class="skill-h2">MySQL</h2>
+    </div>
+
+    <div class="skill">
+        <div class="outer">
+            <div class="inner">
+                <div id="number3">
+                    
+                </div>
+            </div>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+            <defs>
+               <linearGradient id="GradientColor">
+                  <stop offset="0%" stop-color="#e91e63" />
+                  <stop offset="100%" stop-color="#673ab7" />
+               </linearGradient>
+            </defs>
+            <circle class="circle3" cx="80" cy="80" r="70" stroke-linecap="round" />
+    </svg>
+    <h2 class="skill-h2">Android </h2>
+    </div>
+    <div class="skill">
+        <div class="outer">
+            <div class="inner">
+                <div id="number4">
+                    
+                </div>
+            </div>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+            <defs>
+               <linearGradient id="GradientColor">
+                  <stop offset="0%" stop-color="#e91e63" />
+                  <stop offset="100%" stop-color="#673ab7" />
+               </linearGradient>
+            </defs>
+            <circle class="circle4" cx="80" cy="80" r="70" stroke-linecap="round" />
+    </svg>
+    <h2 class="skill-h2">React Native</h2>
+    </div>
+</div>
+</div>
+
+<div id="contact">
+    <h1 class="skill-h1">Contact Me!</h1>
+    <div class="container">
+            <div class="contact-left">
+                <form action="https://formbold.com/s/3VrZX" method="POST" enctype="multipart/form-data">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="text" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form> 
+            </div>
+            <div class="contact-right">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54356.67121047455!2d71.03850332525133!3d31.625855872080578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3925d63bd5e12057%3A0xf477a475419fe9b5!2sBhakkar%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1721470837152!5m2!1sen!2s" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="details">
+        <div class="about-me">
+            <h3>About Me</h3>
+            <a href="#">Bhakkar, Pujab, Pakistan</a>
+            <a href="#">+923143735234</a>
+            <a href="#">john@example.com</a>
+        </div>
+        <div class="social-links">
+            <h3>Social Links</h3>
+            <a href="#">LinkedIn</a>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#"></a>
+        </div>
+    </div>
+    <p>© 2024, Made with ❤️ by Rahat</p>
+
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    filterCards(); // Initialize with all cards displayed
+});
+
+function filterCards() {
+    const filter = document.getElementById('categoryFilter').value;
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
+function clearFilter() {
+    document.getElementById('categoryFilter').value = 'all';
+    filterCards();
+}
+
+function openLightbox(src) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightboxImage');
+    const lightboxCaption = document.getElementById('lightboxCaption');
+    lightbox.style.display = 'block';
+    lightboxImage.src = src;
+    lightboxCaption.innerText = caption;
+}
+
+function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.style.display = 'none';
+}
+
+
+</script>
+
+
+
+<script>
+
+    let number=document.getElementById('number');
+    let counter=0;
+    setInterval(() =>{
+        if(counter==90){
+            clearInterval();
+        }else{
+            counter += 1;
+        number.innerHTML = counter + "%"
+        }
+        
+    },22)
+
+
+    let number1=document.getElementById('number1');
+    let counter1=0;
+    setInterval(() =>{
+        if(counter1==80){
+            clearInterval();
+        }else{
+            counter1 += 1;
+        number1.innerHTML = counter1 + "%"
+        }
+        
+    },25)
+
+    let number2=document.getElementById('number2');
+    let counter2=0;
+    setInterval(() =>{
+        if(counter2==65){
+            clearInterval();
+        }else{
+            counter2 += 1;
+        number2.innerHTML = counter2 + "%"
+        }
+        
+    },33)
+
+    let number3=document.getElementById('number3');
+    let counter3=0;
+    setInterval(() =>{
+        if(counter3==85){
+            clearInterval();
+        }else{
+            counter3 += 1;
+        number3.innerHTML = counter3 + "%"
+        }
+        
+    },23)
+
+    let number4=document.getElementById('number4');
+    let counter4=0;
+    setInterval(() =>{
+        if(counter4==95){
+            clearInterval();
+        }else{
+            counter4 += 1;
+        number4.innerHTML = counter4 + "%"
+        }
+        
+    },20)
+
+</script>
+
+</body>
+</html>
